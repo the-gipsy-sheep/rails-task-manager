@@ -4,6 +4,6 @@
 <p>This task is <%= @task.completed ? "completed" : "not completed yet" %></p>
 
 <%= link_to "Back to list", tasks_path %> ||
-<%= link_to "Update task", task_edit_path %> ||
-<%= link_to "Delete", task_destroy_path(@task),
+<%= link_to "Update task", edit_task_path %> ||
+<%= link_to "Delete", task_path(@task),
   data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>

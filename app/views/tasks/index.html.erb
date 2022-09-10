@@ -4,4 +4,4 @@
   <h3><%= link_to "#{task.title}", task_path(task) %> - <%= task.completed ? "Done" : "To do" %></h3>
 <% end %>
 
-<%= link_to "Create a task", tasks_new_path %>
+<%= link_to "Create a task", new_task_path %>
